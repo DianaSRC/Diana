@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-flow: column;
+            background-color: darkgreen;
+            color: white;
+        }
+        table {
+            padding: 1rem;
+            border: 3px solid white;
+            height: 80vh;
+            width: 80vw;
+            background-color: darkred;
+        }
+        th {
+            width: 11.42vw;
+            height: 1rem;
+        }
+        td {
+            position: relative;
+            border: 1px solid darkred;
+            background-color: darkgray;
+            transition: transform 0.6s;
+        }
+        td:hover {
+            box-shadow: 0px 0px 9px 3px;
+        }
+        table:has(td:hover) td:not(:hover){
+            transform: scale(0.8);
+        }
+        td h1 {
+            position: absolute;
+            font-size: 1rem;
+            color: darkred;
+            width: 100%;
+            margin: 0.6rem;
+        }
+        .day {
+            margin-left: 1rem;
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 70%;
+            height: 70%;
+            border: 1px solid;
+            position: absolute;
+            left: 10%;
+            top: 10%;
+            transition: all 0.6s;
+            transform: rotateY(67.5deg);
+            opacity: 0;
+        }
+        .day:hover {
+            background-color: red;
+            border: 1px solid white;
+            transform: rotateY(0deg);
+            opacity: 1;
+        }
+        img {
+            border-radius: 2px;
+            width: 80%;
+            height: 80%;
+            object-fit: cover;
+           
+        }
+        p {
+            text-align: center;
+            width: 70%;
+            height: 10%;
+            font-size: 1.1rem;
+            margin: 0;
+            text-transform: capitalize;
+        }
+    </style>
+    <title>Advent Calendar</title>
+</head>
+<body>
+    <h1>Advent Calendar</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Monday </th>
+                <th>Tuesday </th>
+                <th>Wednesday </th>
+                <th>Thursday </th>
+                <th>Friday </th>
+                <th>Saturday </th>
+                <th>Sunday </th>
+            </tr>
+        </thead>
+        <tbody><tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <h1>1</h1>
+                <div class="day">
+                    <img src="snow.jpg">
+                    <p>Snow</p>
+                </div>
+            </td>
+            <td>
+                <h1>2</h1>
+                <div class="day">
+                    <img src="./snowman.jpg">
+                    <p>Snowman</p>
+                </div>
+            </td>
+            <td>
+                <h1>3</h1>
+                <div class="day">
+                    <img src="./tree.jpg">
+                    <p>Tree</p>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h1>4</h1>
+                <div class="day">
+                    <img src="./christmas balls.jpg">
+                    <p>Christmas Balls</p>
+                </div>
+            </td>
+            <td>
+                <h1>5</h1>
+                <div class="day">
+                    <img src="./chocolate.jpg">
+                    <p>Chocolate</p>
+                </div>
+            </td>
+            <td>
+                <h1>6</h1>
+                <div class="day">
+                    <img src="./king cake.jpg">
+                    <p>King Cake</p>
+                </div>
+            </td>
+            <td>
+                <h1>7</h1>
+                <div class="day">
+                    <img src="./santa claus.jpg">
+                    <p>Santa Claus</p>
+                </div>
+            </td>
+            <td>
+                <h1>8</h1>
+                <div class="day">
+                    <img src="./reindeer.jpg">
+                    <p>Reindeer</p>
+                </div>
+            </td>
+            <td>
+                <h1>9</h1>
+                <div class="day">
+                    <img src="./hat.jpg">
+                    <p>Hat</p>
+                </div>
+            </td>
+            <td>
+                <h1>10</h1>
+                <div class="day">
+                    <img src="./socks.jpg">
+                    <p>Socks</p>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h1>11</h1>
+                <div class="day">
+                    <img src="./elves.jpg">
+                    <p>Elves</p>
+                </div>
+            </td>
+            <td>
+                <h1>12</h1>
+                <div class="day">
+                    <img src="./gifts.jpg">
+                    <p>Gifts</p>
+                </div>
+            </td>
+            <td>
+                <h1>13</h1>
+                <div class="day">
+                    <img src="./candy.jpg">
+                    <p>Candy</p>
+                </div>
+            </td>
+            <td>
+                <h1>14</h1>
+                <div class="day">
+                    <img src="./family.jpg">
+                    <p>Family</p>
+                </div>
+            </td>
+            <td>
+                <h1>15</h1>
+                <div class="day">
+                    <img src="./music.jpg">
+                    <p>Music</p>
+                </div>
+            </td>
+            <td>
+                <h1>16</h1>
+                <div class="day">
+                    <img src="./angels.jpg">
+                    <p>Angels</p>
+                </div>
+            </td>
+            <td>
+                <h1>17</h1>
+                <div class="day">
+                    <img src="./gathering.jpg">
+                    <p>Gathering</p>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h1>18</h1>
+                <div class="day">
+                    <img src="./fireplace.jpg">
+                    <p>Fireplace</p>
+                </div>
+            </td>
+            <td>
+                <h1>19</h1>
+                <div class="day">
+                    <img src="./chimney.jpg">
+                    <p>Chimney</p>
+                </div>
+            </td>
+            <td>
+                <h1>20</h1>
+                <div class="day">
+                    <img src="./mistletoe.jpg">
+                    <p>Mistletoe</p>
+                </div>
+            </td>
+            <td>
+                <h1>21</h1>
+                <div class="day">
+                    <img src="turkey.jpg">
+                    <p>Turkey</p>
+                </div>
+            </td>
+            <td>
+                <h1>22</h1>
+                <div class="day">
+                    <img src="./bells.jpg">
+                    <p>Bells</p>
+                </div>
+            </td>
+            <td>
+                <h1>23</h1>
+                <div class="day">
+                    <img src="./the nightmare before christmas.jpg">
+                    <p>Jack</p>
+                </div>
+            </td>
+            <td>
+                <h1>24</h1>
+                <div class="day">
+                    <img src="./star.jpg">
+                    <p>Star</p>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h1>25</h1>
+                <div class="day">
+                    <img src="./jesus.jpg" alt="">
+                    <p>Jesus</p>
+                </div>
+            </td>
+        </tr>
+    </tbody></table>
+</body></html>
